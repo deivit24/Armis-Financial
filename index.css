@@ -1,0 +1,887 @@
+
+body{
+  height: 100%;
+  background: url(img/background.jpg) top center no-repeat ;
+  background-attachment: fixed;
+
+}
+a { color:blue; } /* Globally */
+
+
+li, h1, h2, h3, h4, h5{
+  font-family: "Ubuntu",sans-serif;
+  font-weight: bold;
+}
+
+p{
+  font-family: "Raleway",sans-serif;
+}
+
+/* ================Navbars============ */
+
+img {
+  width: 100%;
+}
+
+nav img {
+  width: 250px;
+}
+
+.favicon {
+  width: 100px;
+}
+
+#mainNav .navbar-toggler {
+  color: black;
+  background-color: #d89e04;
+  opacity: .75;
+  border: 1px solid black;
+}
+
+nav .navbar {
+  color: black;
+  border-bottom: #d89e04 solid 3px;
+}
+
+#mainNav {
+  padding-left: 20px;
+  background-color: white;
+  color: black;
+  border-color: #d89e04 solid 3px;
+}
+
+#mainNav a {
+  color: #333;
+}
+
+#mainNav button {
+  color: #f4f4f4;
+}
+
+#mainNav .nav-item:hover {
+
+  color:  #d89e04;
+  border: 1px solid #d89e04;
+
+
+}
+
+#mainNav .active a {
+  color: #d89e04;
+  font-weight: bold;
+}
+
+
+
+#main-nav {
+  padding-left: 20px;
+  background-color: white;
+  color: black;
+  border-color: #d89e04 solid 3px;
+}
+
+#main-nav a {
+  color: #333;
+}
+
+#main-nav button {
+  color: #f4f4f4;
+}
+
+#main-nav .navbar-toggler {
+  color: #333;
+  background-color: #d89e04;
+  opacity: .75;
+}
+
+#main-nav .nav-item:hover {
+
+  color:#d89e04 ;
+  border: 1px solid #d89e04;
+
+
+
+
+}
+
+#main-nav .active a {
+  color: #d89e04;
+  font-weight: bold;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+}
+.login{
+font-size: 16px;
+font-family: 'Ubuntu',sans-serif;
+
+background: #d89e04;
+color: #fff;
+
+border-radius: 20px;
+text-decoration: none;
+border: 1px solid black;
+
+
+}
+
+.login:hover{
+  text-decoration: none;
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.nav-pills li.active {
+	background-color:white;
+  color: #d89e04;
+}
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu a:hover{
+  color:#d89e04;
+  font-weight: bold;
+
+}
+
+.dropdown:hover{
+  color:#d89e04;
+  font-weight: bold;
+}
+
+.dropdown span{
+  color:#d89e04;
+  font-weight: bold;
+}
+#actives a {
+  color:#d89e04;
+  font-weight: bold;
+
+}
+
+#actives .dropdown-item{
+  color: #333;
+
+}
+#actives .dropdown-item:hover{
+  color: #d89e04;
+
+
+}
+
+#current .dropdown-item{
+  color:red;
+  font-weight: bold;
+}
+
+/* ===================sidebar========================= */
+
+
+/* ==============jumbotron===================== */
+
+#showcase .jumbotron {
+  min-height: 650px;
+  background: url(img/home.jpg) no-repeat top center;
+  width: 100%;
+}
+
+#showcase .container a {
+  background: white;
+  opacity: 1;
+  color: black;
+  border-color: #d89e04;
+}
+
+#showcase .container {
+  background-color: white;
+  opacity: .8;
+  padding: 20px;
+  margin-top: 125px;
+}
+
+#showcase .lead {
+  font-size: 28px;
+}
+
+#showcase .container a:hover {
+  font-weight: bold;
+  background-color: #d89e04;
+}
+
+#showcase .about {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==============Marketing============= */
+
+
+.container{
+  background: transparent;
+
+  padding: 25px;
+
+}
+
+.container h3{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.container button{
+  margin-bottom: 25px;
+}
+
+.container span{
+
+  color: #d89e04;
+}
+
+#showcase2 .jumbotron {
+  min-height: 650px;
+  background: url(img/showcase2.jpg) no-repeat top center;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  color:#000;
+  border-top:#d89e04 3px solid;
+  padding:0px;
+  margin: 0px 0px 0px 0px;
+  border:0px;
+}
+#showcase2 h1{
+  font-size: 45px;
+  color:white;
+  margin-top: 25%;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+
+#showcase2 .container {
+  background: transparent;
+  box-shadow: none;
+  align-items: center;
+
+}
+
+
+#showcase2 a{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: white solid;
+  padding:5px 15px 10px 15px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+#showcase2 a:hover{
+  background-color: white;
+  color:black;
+  font-style: none;
+}
+
+/* ==================about showcase==================== */
+#showcase3 .jumbotron {
+  min-height: 350px;
+  background: url(img/service.png) no-repeat ;
+  width: 100%;
+}
+
+#showcase3 .container a {
+  background: white;
+  opacity: 1;
+  color: black;
+  border-color: #d89e04;
+}
+
+
+#showcase3 .about {
+  color: white;
+
+  margin: 10%;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+/* =========================service showcase===================== */
+#showcase4 .jumbotron {
+  height: 350px;
+  background: url(img/family2.jpg) no-repeat center center;
+  width: 100%;
+}
+
+#showcase4 .container a {
+  background: white;
+  opacity: 1;
+  color: black;
+  border-color: #d89e04;
+}
+
+
+#showcase4 .about {
+  color: white;
+  margin:50px 0px;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+/* =========================Philpsophy showcase======================= */
+#showcase5 .jumbotron {
+  height: 350px;
+  background: url(img/as.jpg) no-repeat center center;
+  width: 100%;
+}
+
+#showcase5 .container a {
+  background: white;
+  opacity: 1;
+  color: black;
+  border-color: #d89e04;
+}
+
+
+#showcase5 .about {
+  color: black;
+  margin:50px 0px;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+.jumbotron h1{
+  font-size: 80px;
+  font-weight: normal;
+}
+
+
+/* =========================Fees Showcase===================== */
+#showcase6 .jumbotron {
+  height: 350px;
+  background: url(img/coins.jpg) no-repeat center center;
+  width: 100%;
+}
+
+#showcase6 .container a {
+  background: white;
+  opacity: 1;
+  color: white;
+  border-color: #d89e04;
+}
+
+
+#showcase6 .about {
+  color: white;
+  margin:0px 0px;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+               0px 8px 13px rgba(0,0,0,0.5),
+               0px 18px 23px rgba(0,0,0,0.5);
+
+}
+
+#showcase6 .about p {
+  color: white;
+  font-size: 30px;
+  margin:0px 0px;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+               0px 8px 13px rgba(0,0,0,0.5),
+               0px 18px 23px rgba(0,0,0,0.5);
+
+}
+/* ==================About Page Main Content================== */
+
+#about h3{
+  text-align: left;
+}
+#about h1{
+  text-align: center;
+
+}
+
+#about ul {
+  list-style-type: none;
+  margin: 15px 0px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+
+
+
+}
+#about .active{
+  font-size: 20px;
+  font-family: 'Ubuntu',sans-serif;
+  color: #d89e40;
+  font-weight: bold;
+
+}
+
+#about li a:hover{
+  cursor: pointer;
+  color: #d89e04;
+  font-weight: bold;
+}
+
+#about a{
+  color: black;
+  text-decoration: none;
+}
+#about img{
+  width: 300px;
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+
+.arrow{
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.arrow2{
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  transform: rotateY(180deg);
+
+/* ========================= Our Service page========================== */
+}
+
+.services ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+
+.services li{
+  display: inline;
+  margin: 10px;
+}
+
+.services .active{
+  font-size: 20px;
+  font-family: 'Ubuntu',sans-serif;
+  color: #d89e40;
+  font-weight: bold;
+
+}
+
+.services li a:hover{
+  cursor: pointer;
+  color: #d89e04;
+  font-weight: bold;
+}
+
+.services a{
+  color: black;
+  text-decoration: none;
+}
+
+.services h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services p{
+  margin: 50px 0px;
+}
+
+.services img{
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.planning .side {
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+
+.planning .side li{
+  display: inline;
+  margin: 10px;
+}
+
+.planning .active{
+  font-size: 20px;
+  font-family: 'Ubuntu',sans-serif;
+  color: #d89e40;
+  font-weight: bold;
+
+}
+
+.planning li a:hover{
+  cursor: pointer;
+  color: #d89e04;
+  font-weight: bold;
+}
+
+.planning a{
+  color: black;
+  text-decoration: none;
+}
+
+.planning h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.planning p{
+  margin: 50px 0px;
+}
+
+.planning .list li{
+
+  margin-bottom: 50px;
+
+}
+
+
+/* ==============================Our Philosophy Page================ */
+#allo .container{
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+
+  background: white;
+}
+
+#allo h1{
+  text-align: center;
+}
+.diver img{
+  float:right;
+  margin-top: 25px;
+  margin-right: 25px;
+  height: 200px;
+  width: 200px;
+}
+
+.diver h1, p{
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.allo img{
+  float:right;
+  margin-top: 25px;
+  margin-right: 25px;
+  height: 200px;
+  width: 300px;
+}
+
+.allo h1, p{
+  margin-bottom: 25px;
+}
+
+.port .buttons{
+  text-align: center;
+}
+.port button{
+
+    background-color: #373737;
+    color: white;
+    border:#d89e04 1px solid;
+    font-size: 18px;
+    width: 11em;
+    height: 2em;
+    text-align: center;
+    padding:3px;
+
+}
+
+.port button:hover{
+  background-color: white;
+   border:#d89e04 2px solid;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   width: 12em;
+   cursor: pointer;
+   padding: 3px;
+}
+
+.port button:focus{
+background-color: white;
+    border:#d89e04 2px solid;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 11em;
+    cursor: pointer;
+    padding: 3px;
+}
+
+
+#passive img{
+  float:right;
+  margin-top: 50px;
+  margin-right: 50px;
+  height: 200px;
+  width: 200px;
+}
+
+#passive .buffet{
+  float:left;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 213px;
+  width: 350px;
+}
+/* Each state */
+/* ========================Fees main content=================== */
+
+table {
+  table-layout: auto;
+  width: 100%;
+
+}
+
+.header td{
+  text-align: center;
+  background: #333;
+  color: white;
+  height: 50px;
+  border: 2px solid #d89e04;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
+               0px 8px 13px rgba(0,0,0,0.2),
+               0px 18px 23px rgba(0,0,0,0.2);
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+table td{
+text-align: center;
+background: white;
+color: #333;
+
+border: 2px solid #d89e04;
+height: 50px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.fees .examples{
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  text-align: center;
+
+  background: white;
+}
+
+
+main .fees h3{
+  font-weight: normal;
+  text-align: left;
+
+
+}
+
+main .fees h1{
+  text-align: center;
+}
+
+.excel {
+  font-size: 16px;
+  font-family: 'Ubuntu',sans-serif;
+
+  background: #d89e04;
+  color: black;
+
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+
+}
+
+.excel:hover{
+  text-decoration: none;
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.green{
+  color: green;
+
+}
+.red{
+  color: red;
+}
+.backGreen:hover{
+  cursor: pointer;
+  background: #d5fdd5;
+}
+.backRed:hover{
+  cursor: pointer;
+  background: #ffcccc;
+}
+
+/* =========footer========= */
+
+#social{
+
+  text-align: center;
+  background-color: #333;
+  width: 100%;
+  border-top:#d89e04 2px solid;
+  border-bottom: #d89e04 2px solid;
+
+}
+
+#social p{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+footer .container{
+  background: none;
+  box-shadow: none;
+}
+
+.social li{
+  display: inline;
+  text-align: center;
+  list-style: none;
+  float: center;
+}
+
+.social li a{
+  width: 50px;
+  height: 50px;
+  background:#f4f4f4;
+  line-height: 40px;
+  font-size: 35px;
+  margin: 0px 5px;
+  display: inline-block;
+  border-radius: 50%;
+
+  overflow: hidden;
+  border:3px solid #d89e04;
+
+}
+
+.social li a{
+
+
+  transition: 1s;
+
+  }
+
+.social li a:hover  {
+
+  background-color: #d89e04;
+  transition: 1s;
+  transform: rotateY(360deg);
+  cursor: pointer;
+
+}
+
+#info{
+  background: white;
+}
+footer .container{
+  text-align: center;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #showcase .lead{
+font-size: 20px;
+}
+#showcase h1{
+font-size: 30px;
+}
+#about h3{
+  text-align: center;
+}
+#about li{
+  display: inline;
+  margin: 0px 10px;
+
+}
+#about img{
+  width: 400px;
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+ }
+
+
+ /* =============Timeline for Process========== */
+
+
+
+/* ==============end timeline================= */
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+.arrow, .arrow2{
+  display: none;
+}
+#showcase5 h1 {
+  font-size: 45px;
+}
+.jumbotron h1{
+  font-size: 45px;
+  font-weight: normal;
+}
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
+
+/* // Extra large devices (large desktops) */
+/* // No media query since the extra-large breakpoint has no upper bound on its width */

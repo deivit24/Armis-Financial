@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
+
+</head>
+
+<body>
+	<div style="width:75%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<br>
+	<br>
+  <button id="randomizeData">100000</button>
+  	<button id="addDataset">500000</button>
+  	<button id="removeDataset">1000000</button>
+  	<button id="addData">5000000</button>
+  	<button id="removeData">Remove Data</button>
+  	<script>
+  		var MONTHS = ['Fees'];
+  		var color = Chart.helpers.color;
+  		var barChartData = {
+  			labels: ['Fees'],
+  			datasets: [{
+
+  				label: 'Armis Financial',
+  				backgroundColor: color(window.chartColors.gold).alpha(0.5).rgbString(),
+  				borderColor: window.chartColors.gold,
+  				borderWidth: 1,
+
+  				data: [
+  					3271
+  				]
+
+
+  			}, {
+  				label: 'Traditional FA ',
+  				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+  				borderColor: window.chartColors.red,
+  				borderWidth: 1,
+
+  				data: [
+  					4811
+  				]
+  			}
+      ]
+
+  		};
+
+  		window.onload = function() {
+  			var ctx = document.getElementById('canvas').getContext('2d');
+  			window.myBar = new Chart(ctx, {
+  				type: 'bar',
+  				data: barChartData,
+  				options: {
+  					responsive: true,
+            tooltips: {
+       callbacks: {
+           label: function(tooltipItem, data) {
+               return "$" + Number(tooltipItem.yLabel).toFixed(0).replace(/./g, function(c, i, a) {
+                   return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+               });
+           }
+       }
+   },
+            scales: {
+              yAxes:[{
+                ticks: {
+                  beginAtZero: true,
+                  callback: function(value, index, values) {
+              if(parseInt(value) >= 1000){
+                return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+              } else {
+                return '$' + value;
+              }
+            }
+                }
+              }]
+            },
+  					legend: {
+  						position: 'top',
+  					},
+  					title: {
+  						display: true,
+  						text: 'Fee Difference'
+  					},
+            animation:{
+              animateScale: true,
+              duration: 1500,
+              easing:'easeOutBounce'
+            }
+  				}
+
+  			});
+
+  		};
+
+
+  		document.getElementById('randomizeData').addEventListener('click', function() {
+        var values = [5000, 2000]
+  			barChartData.datasets.forEach(function(dataset) {
+  				dataset.data = dataset.data.map(function() {
+  					return values
+  				});
+
+  			});
+  			window.myBar.update();
+  		});
+
+      document.getElementById('addDataset').addEventListener('click', function() {
+  			barChartData.datasets.forEach(function(dataset) {
+  				dataset.data = dataset.data.map(function() {
+  					return 5000
+  				});
+
+  			});
+  			window.myBar.update();
+  		});
+
+  		document.getElementById('addData').addEventListener('click', function() {
+  			if (barChartData.datasets.length > 0) {
+  				var month = MONTHS[barChartData.labels.length % MONTHS.length];
+  				barChartData.labels.push(month);
+
+  				for (var index = 0; index < barChartData.datasets.length; ++index) {
+  					// window.myBar.addData(randomScalingFactor(), index);
+  					barChartData.datasets[index].data.push(randomScalingFactor());
+  				}
+
+  				window.myBar.update();
+  			}
+  		});
+
+  		document.getElementById('removeDataset').addEventListener('click', function() {
+  			barChartData.datasets.splice(0, 1);
+  			window.myBar.update();
+  		});
+
+  		document.getElementById('removeData').addEventListener('click', function() {
+  			barChartData.labels.splice(-1, 1); // remove the label first
+
+  			barChartData.datasets.forEach(function(dataset) {
+  				dataset.data.pop();
+  			});
+
+  			window.myBar.update();
+  		});
+  	</script>
+</body>
+</html>
