@@ -762,6 +762,22 @@ main .fees h1{
   background: #ffcccc;
 }
 
+/* ========================contact================= */
+.info{
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  background: white;
+}
+.info a{
+  color: black;
+}
+.info a:hover{
+  color:#d89e04;
+  font-weight: bold;
+}
 /* =========footer========= */
 
 #social{
