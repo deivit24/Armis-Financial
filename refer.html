@@ -74,17 +74,18 @@
     <div class="container">
       <h2>Please Refer Family and Friends to Armis Financial</h2>
       <p>If you can provide any family and friends' email information below, we will send them a personal invitation to join Armis Financial on your behalf. Armis Financial will waive one month of adviosry fees to the Referrer.</p>
-      <form action="">
+      <form action="https://formspree.io/david@armisfinancial.com"
+      method="POST">
         <h5>Client Name*</h5>
         <div class="form-row">
 
           <div class="form-group col-md-6">
 
-            <input type="text" class="form-control" name="name" placeholder="First Name">
+            <input type="text" class="form-control" name="fistName" placeholder="First Name">
           </div>
           <div class="form-group col-md-6">
 
-              <input type="text" class="form-control" name="name" placeholder="Last Name">
+              <input type="text" class="form-control" name="lastName" placeholder="Last Name">
           </div>
 
         </div>
@@ -93,15 +94,15 @@
 
           <div class="form-group col-md-4">
 
-            <input type="text" class="form-control" name="name" placeholder="First Name" required>
+            <input type="text" class="form-control" name="refferalFname" placeholder="First Name" required>
           </div>
           <div class="form-group col-md-4">
 
-              <input type="text" class="form-control" name="name" placeholder="Last Name"required>
+              <input type="text" class="form-control" name="refferalLname" placeholder="Last Name"required>
           </div>
           <div class="form-group col-md-4">
 
-              <input type="email" class="form-control" name="name" placeholder="Email" required>
+              <input type="email" class="form-control" name="_replyto" placeholder="Email" required>
           </div>
 
 
@@ -110,9 +111,9 @@
 
           <div class="form-group">
 
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" name="personalMessage"id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <input type="submit" name="Submit" value="Send" class="btn btn-primary" >
 
       </form>
     </div>
