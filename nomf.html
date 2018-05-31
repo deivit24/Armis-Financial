@@ -38,7 +38,7 @@
      </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -47,13 +47,13 @@
         <li class="nav-item">
           <a class="nav-link" href="service.html">Services</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown " id="actives">
        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Philosophy
        </a>
        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
          <a class="dropdown-item" href="philosophy.html">Investment Strategy</a>
-         <a class="dropdown-item" href="nomf.html">No Mutual Funds</a>
+         <a class="dropdown-item" id="current" href="nomf.html"><span>No Mutual Funds</span></a>
        </div>
      </li>
 
@@ -71,16 +71,14 @@
 
   <!-- ===================showcase================ -->
 
-  <section id="showcase">
+  <section id="showcase-nomf">
     <div class="jumbotron">
       <div class="container">
         <div class="col-med-6">
           <div class="about">
-            <h1 class="display-4">A New Kind of Advice</h1>
-            <p class="lead">New kind of advice that doesn't follow the outdated norm and that is tailored to your values and goals.</p>
-            <p class="h6">
-              <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn More</a>
-            </p>
+            <h1 class="display-4">Mutual Funds</h1>
+            <p class="lead">And what you should know about them</p>
+
           </div>
         </div>
       </div>
@@ -98,7 +96,7 @@
 
     <div class="collapse navbar-collapse  justify-content-center " id="navbar">
       <ul class="navbar-nav ">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -107,13 +105,13 @@
         <li class="nav-item">
           <a class="nav-link" href="service.html">Services</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown " id="actives">
        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Philosophy
        </a>
        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
          <a class="dropdown-item" href="philosophy.html">Investment Strategy</a>
-         <a class="dropdown-item" href="nomf.html">No Mutual Funds</a>
+         <a class="dropdown-item" id="current" href="nomf.html"><span>No Mutual Funds</span></a>
        </div>
      </li>
         <li class="nav-item">
@@ -130,88 +128,90 @@
 
   </nav>
 
+  <!-- =========================main content================= -->
+  <div class="container nomf">
+    <h1>4 Questions to ask yourself:</h1>
+    <br>
+    <ol>
+      <li><p>Do you own any Mutual Funds in your 401k, IRA, 403b, brokerage account, etc.?</p></li>
+      <li><p>Are your Mutual Funds underperforming or overperforming?</p></li>
+      <li><p>Do you understand the fees associated with Mutual Funds?</p></li>
+      <li><p>Where can I learn more about the fees in my Mutual Funds?</p></li>
 
-  <div class="container">
+
+    </ol>
+    <br>
+
+    <p>For the longest time, Mutual Funds have been touted to be one the best investments for individual investors. That is why most portfolios, whether its in a 401k, 403b, IRA, etc., are investment in Mutual Funds. But are they really the best solution for the individual investor? </p>
+    <p>You may believe you are holding the top rated Mutual Funds by Morningstar but in reality, 88% of those 5-star funds were underperformers in the long-run. <a href="https://www.wsj.com/articles/the-morningstar-mirage-1508946687">Link to resource</a>.</p>
+
+    <br>
+    <h2>3 types of fees behind Mutual Funds</h2>
+    <br>
+
+    <div class="row">
+      <div class="col-md-6 light-green">
+        <h4>Ongoing Basis</h4>
+        <p>These are the type of fees that Mutual Funds might charge on an ongoing basis:</p>
+        <ul>
+          <li>Management fees - <span class="none">These are the fees you pay to the manager/managers of the fund.</span></li>
+          <li>12b-1 fees - <span class="none">These fees, capped at 1% of your assets in the fund annually, are taken out of the fund's assets to pay for the cost of marketing and selling the fund, for some shareholder services, and sometimes to pay employee bonuses.</span></li>
+          <li>Other expenses - <span class="none">This miscellaneous category includes the costs of providing services to shareholders outside of the expenses covered by 12b-1 fees or portfolio management fees. You also pay transaction fees for the trades the fund makes, though this amount is not reported separately as the other fees are.</span></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 light-yellow">
+        <h4>Specific Action</h4>
+        <p>These are the type of fees that Mutual Funds might charge based on a an action:</p>
+        <ul>
+          <li>Account fees - <span class="none">Funds may charge you a separate fee to maintain your account, especially if your investment falls below a set dollar amount.</span></li>
+          <li>Redemption fees - <span class="none">To discourage very short-term trading, funds often charge a redemption fee to investors who sell shares shortly after buying them. Redemption fees may be charged anywhere from a few days to over a year. </span></li>
+          <li>Exhange fees - <span class="none">Some funds also charge exchange fees for moving your money from one fund to another fund offered by the same investment company.</span></li>
+          <li>Purchase fees- <span class="none">Whether or not a fund charges a front-end sales charge, it may assess a purchase fee at the time you buy shares of the fund.</span></li>
+
+        </ul>
+      </div>
+      <div class="container light-red">
+      <div class="row">
+      <div class="col ">
+        <h4>Sneaky Behaviour</h4>
+        <p>These are the hidden costs that are undisclosed. To get an even better understanding, I recommend reading <a href="https://www.mutualfundsexposed.com/">“Mutual Funds Exposed”</a>, by Dr. Kenneth Kim and William Nelson.</p>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-4">
-        <img src="img/education.jpg" alt="" class="thumbnail">
-        <h3>Educational</h3>
-        <p>We don’t only provide exceptional advice, we educate clients as well. We educated them on the detrimental affects that mutual funds have on their portfolio’s regardless of your goals. We then educate them on the alternatives as well. Armis Financial
-          is prepared to go above and beyond your traditional broker-dealer service.</p>
-
+        <p><a href="" target="_blank">Tax Inefficiency</a></p>
       </div>
       <div class="col-md-4">
-        <img src="img/goals.jpg" alt="" class="thumbnail">
-        <h3>Goal Oriented</h3>
-        <p>A goal without a plan is just a wish! Our holistic approach begins with having the end in mind. Whether your goal is just to beat the benchmark, saving for retirement, or even saving up to buy your first home, each individual has a particular
-          set of goals. There is no “One Size Fits All” type of solution.</p>
-        <br>
-
+        <p><a href="https://www.investopedia.com/terms/i/incubatedfund.asp" target="_blank">Incubation</a></p>
       </div>
       <div class="col-md-4">
-        <img src="img/intentional.jpg" alt="" class="thumbnail">
-        <h3>Intentional</h3>
-        <p>Since day one, financial advisors are often taught to seek as many clients as possible, sale you an investment product, or push you towards their “fee-based” solutions. This has been the norm for quite some time now. Armis Financial intentionally
-          only works with a select group of people that believe in our methods. Less is more.</p>
-
+        <p><a href="https://www.researchgate.net/publication/4769157_Leaning_for_the_Tape_Evidence_of_Gaming_Behavior_in_Equity_Mutual_Funds" target="_blank">Leaning for the Tape</a></p>
       </div>
+      <div class="col-md-4">
+        <p><a href="https://www.investopedia.com/terms/w/windowdressing.asp" target="_blank">Window Dressing</a></p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Excessive Risk-Taking Near Quarter-End</strong></p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Favortism Towards Institutional Clients</strong></p>
+      </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <div class="container finra">
+      <h2>Finra Fund Analyzer</h2>
+      <p><strong>Click on the Firna button</strong> below if you want an easy-tp-use online tool  that allows you to compare expenses among funds -- or among different share classes of the same fund. Using a data feed that captures expense information for thousands of funds, the analyzer can help you understand the impact fees have on your investment over time. Once you select up to three funds, type in the amount you plan to invest and how long you plan to keep the fund, the analyzer does the rest.</p>
+      <form action="https://tools.finra.org/fund_analyzer/" target="_blank">
+      <button type="submit"  name="button"><img src="img/finra.png"  alt="" ></button>
+      </form>
     </div>
   </div>
 
-  <br>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h3>Transparent and <span>Straightforward</span></h3>
-        <p>Being transparent is a must but being straightforward with fees makes it easy to understand exactly what you are paying. There will be no convolution and financial jargon that keeps you wondering what the costs are. <a href="fees.html">Learn more</a>          about pricing and the difference between ‘fee-based’ & ‘fee only’.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/transparency.jpg" alt="" class="thumbnail">
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/mutualfund.jpg" alt="" class="thumbnail">
-      </div>
-      <div class="col-md-8">
-        <h3>Mutual Funds. <span>The Ugly Truth Behind Them.</span></h3>
-        <p>Is a Financial Advisor recommending mutual funds to you? Are you currently invested in mutual funds? At Armis Financial, we will educate you on the ugly truth behind mutual funds and why they can detrimental to your portfolio and your goals. We
-          will then educate you on alternative solutions. <a href="nomf.html">Learn more</a> about the ugly truth behind mutual funds.</p>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h3>Your Risk Profile<span> How to Gauge it.</span></h3>
-        <p><a href="">Learn more </a>on why some Risk Tolerance Questionnaires don’t capture all four spectrums of your Risk Profile. They either just capture your emotional comfort to risk or just the level of risk you are able to afford. There is two more
-          aspects that need to be considered to fully understand your Risk Profile. That is the Risk Required to achieve your goals and your Time Horizon.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/risk.jpg" alt="" class="thumbnail">
-      </div>
-    </div>
-  </div>
-  <br>
-  <section id="showcase2">
-    <div class="jumbotron">
-      <div class="container">
-        <div class="col-med-6">
-          <div class="about">
-            <h1>Fees that make sense.</h1>
-            <p class="h6">
-              <a class="btn btn-primary btn-lg" href="" role="button">Learn More</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- ================footer=============== -->
   <footer id="social">

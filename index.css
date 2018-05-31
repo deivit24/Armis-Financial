@@ -385,7 +385,85 @@ border: 1px solid black;
   font-weight: normal;
 }
 
+/* ========================No Mutual Funds========================= */
 
+#showcase-nomf .jumbotron {
+  height: 350px;
+  background-image: url(img/nomf.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+
+}
+
+#showcase-nomf .about {
+  color: white;
+  margin:0px 0px;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+               0px 8px 13px rgba(0,0,0,0.5),
+               0px 18px 23px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,.5);
+  height: 200px;
+
+}
+.nomf h1, h4 {
+  text-align: center;
+}
+
+.nomf .none {
+  color: black;
+  font-weight: 400;
+  font-family: 'Raleway';
+
+}
+.nomf ul li {
+  margin-top: 20px;
+}
+
+.nomf .light-green{
+  background: #c1fcc1;
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+.nomf .light-yellow {
+  background: #ffff94;
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+.nomf .light-red {
+  background: #ff9999;
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+.nomf .light-red a {
+
+  color: black;
+  font-weight: bold;
+}
+.nomf .light-red a:hover{
+  color:white;
+
+}
+.finra {
+  text-align: center;
+  background: white;
+  box-shadow: 0px 0px 13px 5px rgba(68,68,68,0.2);
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+.finra img{
+  width: 200px;
+}
+.finra img:hover{
+  cursor: pointer;
+
+}
 /* =========================Fees Showcase===================== */
 #showcase6 .jumbotron {
   height: 350px;
