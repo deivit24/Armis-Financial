@@ -48,7 +48,13 @@ nav .navbar {
   background-color: white;
   color: black;
   border-color: #d89e04 solid 3px;
+
 }
+
+.none {
+  visibility: hidden;
+}
+
 
 #mainNav a {
   color: #333;
@@ -464,6 +470,8 @@ border: 1px solid black;
   cursor: pointer;
 
 }
+
+
 /* =========================Fees Showcase===================== */
 #showcase6 .jumbotron {
   height: 350px;
