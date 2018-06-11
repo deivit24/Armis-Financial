@@ -15,7 +15,7 @@ body {
 }
 
 .landing {
-  position: relative;
+  position: static;
   background-image: url(img/armisSoonCover.jpg);
   background-size: cover;
   background-position: center;
