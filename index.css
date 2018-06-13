@@ -912,7 +912,7 @@ footer .container{
   float: center;
 }
 
-.social li a{
+.social  a{
   width: 50px;
   height: 50px;
   background:#f4f4f4;
@@ -934,13 +934,37 @@ footer .container{
 
   }
 
-.social li a:hover  {
+.social  a:hover  {
 
-  background-color: #d89e04;
+  background-color: white;
   transition: 1s;
   transform: rotateY(360deg);
   cursor: pointer;
 
+}
+
+.fa-facebook {
+  color: #333;
+}
+.fa-facebook:hover {
+  color:#3B5998;
+}
+.fa-youtube {
+  color: #333;
+}
+.fa-youtube:hover {
+  color: #ff0000;
+}
+.fa-instagram {
+  color: #333;
+}
+
+.fa-linkedin {
+  color: #333;
+}
+
+.fa-linkedin:hover {
+  color:#0077B5;
 }
 
 #info{
