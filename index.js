@@ -23,12 +23,3 @@ window.addEventListener("scroll", function () {
         $('.navs').css('top', window.pageYOffset);
     }
 }, false);
-
-
-
-
-$(function () {
-  $('[data-toggle="popover"]').popover();
-});
-
-$('#element').popover('toggle');
